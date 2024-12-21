@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Menu</title>
+  <style>
+    /* Umumiy body dizayni */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Menu dizayni */
+    .menu {
+      display: flex;
+      gap: 30px;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .link {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    /* Hover effekti */
+    .link:hover {
+      background-color: #00bcd4;
+      width: 150px;
+    }
+
+    .link-title {
+      opacity: 0;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 16px;
+      color: white;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Ikona va matn */
+    .link:hover .link-title {
+      opacity: 1;
+    }
+
+    .link-icon {
+      color: white;
+      font-size: 36px;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover .link-icon {
+      color: black;
+    }
+
+    /* Ikona uchun font awesome yoki boshqa SVG simvollarini ishlatish */
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <!-- Home (Uy) bo'limi -->
+    <a href="#" class="link">
+      <div class="link-icon">&#127968;</div>
+      <span class="link-title">Home</span>
+    </a>
+
+    <!-- Earn (Daromad olish) bo'limi -->
+    <a href="#" class="link">
+      <div class="link-icon">&#128176;</div>
+      <span class="link-title">Earn</span>
+    </a>
+
+    <!-- Withdraw (Yechib olish) bo'limi -->
+    <a href="#" class="link">
+      <div class="link-icon">&#128179;</div>
+      <span class="link-title">Withdraw</span>
+    </a>
+  </div>
+</body>
+</html>
+
